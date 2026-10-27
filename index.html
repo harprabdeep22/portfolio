@@ -1,0 +1,345 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Harprabdeep Kaur Bajwa | AI & ML Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+
+<body>
+    ```html
+<!-- Search Bar -->
+<section id="portfolio-search" class="portfolio-search">
+  <input
+    type="search"
+    id="searchInput"
+    placeholder="Search skills, projects, education..."
+    aria-label="Search portfolio"
+  >
+
+  <button id="searchButton" type="button">
+    Search
+  </button>
+
+  <p id="searchMessage" aria-live="polite"></p>
+</section>
+```
+
+
+  <!-- Header -->
+  <header>
+    <img
+      src="assets/image.jpg"
+      alt="Harprabdeep Kaur Bajwa"
+      class="profile-image"
+    >
+
+    <h1>Harprabdeep Kaur Bajwa</h1>
+
+    <p class="tagline">
+      B.Tech CSE (AI & ML) Student | Aspiring AI/ML Engineer
+    </p>
+
+    <p>JECRC University, Jaipur, Rajasthan</p>
+
+    <p>
+      <a
+        href="https://github.com/harprabdeep22"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visit My GitHub Profile
+      </a>
+    </p>
+  </header>
+
+  <main>
+
+    <!-- About Me -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+
+      <p>
+        Hi! I'm Harprabdeep Kaur Bajwa, a second-year B.Tech student
+        specializing in Computer Science Engineering with Artificial
+        Intelligence and Machine Learning at JECRC University, Jaipur.
+        I'm passionate about programming, AI/ML, and web development.
+        I enjoy learning new technologies, solving problems, and
+        building projects that turn ideas into practical solutions.
+      </p>
+
+      <p>
+        My current technical skills include Python, C++, JavaScript,
+        HTML, CSS, and SQL. I'm continuously improving my programming
+        knowledge through hands-on projects and exploring new
+        technologies to grow as a future AI/ML engineer.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">My Skills</h2>
+
+      <ul>
+        <li>Python</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <!-- GitHub Repositories -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">My GitHub Repositories</h2>
+
+      <p>
+        Explore my programming practice, development projects,
+        and learning journey on GitHub.
+      </p>
+
+      <ul>
+
+        <li>
+          <h3>Python Programs Collection</h3>
+
+          <p>
+            A collection of Python programming exercises and
+            practice programs to strengthen programming
+            fundamentals and problem-solving skills.
+          </p>
+
+          <a
+            href="https://github.com/harprabdeep22/python-basic-1205"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Repository on GitHub
+          </a>
+        </li>
+
+        <li>
+          <h3>Messy Python Code Improvement</h3>
+
+          <p>
+            A project focused on improving code readability,
+            organization, and maintainability through better
+            Python coding practices.
+          </p>
+
+          <a
+            href="https://github.com/harprabdeep22"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Find Repository on My GitHub
+          </a>
+        </li>
+
+        <li>
+          <h3>Bug Fixing Using Cursor AI</h3>
+
+          <p>
+            A programming practice project focused on identifying
+            errors, debugging code, and understanding how AI-assisted
+            development tools can support problem-solving.
+          </p>
+
+          <a
+            href="https://github.com/harprabdeep22"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Find Repository on My GitHub
+          </a>
+        </li>
+
+        <li>
+          <h3>Interactive Quiz Application</h3>
+
+          <p>
+            A web-based quiz application built with HTML, CSS,
+            and JavaScript, featuring multiple-choice questions
+            and answer checking.
+          </p>
+
+          <a
+            href="https://github.com/harprabdeep22"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Find Repository on My GitHub
+          </a>
+        </li>
+
+        <li>
+          <h3>Book Reading List Application</h3>
+
+          <p>
+            A project for organizing and tracking books,
+            designed to practice application development
+            and programming fundamentals.
+          </p>
+
+          <a
+            href="https://github.com/harprabdeep22"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Find Repository on My GitHub
+          </a>
+        </li>
+
+      </ul>
+
+      <p>
+        <a
+          href="https://github.com/harprabdeep22?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explore All My GitHub Repositories
+        </a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Weather Section -->
+  <section id="weather">
+    <h2>Weather</h2>
+
+    <input
+      type="text"
+      id="cityInput"
+      placeholder="Enter a city"
+    >
+
+    <button id="weatherButton" type="button">
+      Get Weather
+    </button>
+
+    <div id="weatherResult">
+      Enter a city to see the weather.
+    </div>
+  </section>
+
+  <!-- AI Chatbot -->
+  <section id="aiChatSection" class="ai-chat">
+    <h2>Ask My AI Assistant</h2>
+
+    <p>
+      Ask questions about my education, skills,
+      GitHub repositories, and technologies.
+    </p>
+
+    <div id="chatMessages" aria-live="polite"></div>
+
+    <div class="chat-controls">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Ask a question..."
+      >
+
+      <button id="sendButton" type="button">
+        Send
+      </button>
+    </div>
+
+    <p id="chatStatus" role="status"></p>
+
+    <p class="chat-note">
+      AI chat is available during the local classroom
+      demonstration only.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <footer>
+    <h2>Connect With Me</h2>
+
+    <p>
+      GitHub:
+      <a
+        href="https://github.com/harprabdeep22"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @harprabdeep22
+      </a>
+    </p>
+
+    <p>
+      Portfolio Repository:
+      <a
+        href="https://github.com/harprabdeep22/portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Portfolio Source Code
+      </a>
+    </p>
+```html
+<!-- Contact -->
+<footer>
+  <h2>Connect With Me</h2>
+
+  <p>
+    Email:
+    <a href="mailto:kaurharprabdeep@gmail.com">
+      kaurharprabdeep@gmail.com
+    </a>
+  </p>
+
+  <p>
+    GitHub:
+    <a
+      href="https://github.com/harprabdeep22"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      @harprabdeep22
+    </a>
+  </p>
+
+  <p>
+    LinkedIn:
+    <a
+      href="https://www.linkedin.com/in/harprabdeep-kaur-59349429b/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Connect with me on LinkedIn
+    </a>
+  </p>
+
+  <p>
+    &copy; 2026 Harprabdeep Kaur Bajwa.
+    All rights reserved.
+  </p>
+</footer>
+```
+
+    
+    
+
+  <!-- Dark Mode -->
+  <button id="themeToggle" type="button">
+    Switch to Dark Mode
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="chatbot.js"></script>
+
+</body>
+</html>
+```
